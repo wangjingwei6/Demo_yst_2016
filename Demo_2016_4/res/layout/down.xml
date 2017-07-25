@@ -1,0 +1,8 @@
+ <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/contentTextView"
+ android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="#F4FDFF"
+android:textColor="#000000" >
+ </TextView>

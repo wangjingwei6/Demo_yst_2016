@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wjw="http://schemas.android.com/apk/res/com.example.ddddd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.wjw.lockview.GestureLockViewGroup
+        android:id="@+id/id_gestureLockViewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F7"
+        android:gravity="center_vertical"
+        wjw:count="3"
+        wjw:tryTimes="5" />
+<!--   wjw:color_no_finger_inner_circle="#ff085D58"
+        wjw:color_no_finger_outer_circle="#ff08F0E0"
+        wjw:color_finger_on="#FF1734BF" -->
+
+</RelativeLayout>

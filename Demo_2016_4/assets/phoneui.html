@@ -1,0 +1,94 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta http-equiv ="Content-Type" content="text/html;charset="UTF-8">
+	<title>这是标题</title>
+	
+	<style>
+        button{
+            border-style: none;
+            width: 50%;
+            height: 30px;
+            background-color: #0099ee;
+            color: #ffffff;
+            font-size: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+	
+	<script type="text/javascript">
+		function show(jsonData){
+			//将传递过来的json数据转换为对象
+				var jsonobjs = eval(jsonData);
+				//获取下面定义的表格
+				var table = document.getElementById("personTable");
+				//遍历上面创建的JSON对象，将每个对象添加为表格中的一行，其每个属性为一列
+				for(var i = 0;i<jsonobjs.length;i++){
+					//添加一行
+					var tr = table.insertRow(table.rows.length);
+					//添加三个单元格
+					var td1 = tr.insertCell(0);
+					td1.align = "left"
+					td1.setAttribute("style","padding-left:20px")
+					var td2 = tr.insertCell(1);
+					td2.align = "center";
+					var td3 = tr.insertCell(2);
+					td3.align ="right"
+					td3.setAttribute("style","padding-right:15px")
+				
+					
+					//设置单元格的内容与属性
+					//其中innerHTML为设置或获取位于对象起始和结束标签的HTML
+					//jsonobjs[i]为对象数组中的第i个对象
+					
+					td1.innerHTML ="<a href='javascript:sharp.takePhoto()'>"+ jsonobjs[i].id+"</a>";
+					td2.innerHTML ="<a href='javascript:sharp.showNotification()'>"+ jsonobjs[i].name+"</a>";
+					//第三个单元格添加超链接，超链接会调用 JAVA 代码中的 call 方法并且把内容作为参数传递进去
+					td3.innerHTML = "<a href='javascript:sharp.call(\""+jsonobjs[i].phone+"\")'>"+jsonobjs[i].phone+"</a>";;
+						
+				}
+		}
+		
+		 function invokedByJava(param) {  
+        document.getElementById("content").innerHTML = "Java has invoked JS function and returnd the data---这是java调用JS方法传过来的参数: "+param;  
+		}  
+	
+		function androidShowToast1(param) {  
+			  window.sharp.jsInvokeAndoidShowToast(param.value);
+		}  
+	
+		function androidShowToast2(param) {  
+			  window.sharp.jsInvokeAndoidShowToast(param);
+		}  
+		
+		function alterFun(){
+			alert("Alter警示框=====HTML？");		
+		}
+		
+	</script>
+	
+</head>
+ <!--onload指定了当该页面被加载的时候调用的方法，本例调用了JAVA 代码中的contactlist方法-->
+<body bgcolor="#00ff00" text="#FFFFFF" style="margin:0000" >
+<!--onload="javascript:sharp.contactlist()"-->
+
+	<!--定义一个表格，显示数据-->
+	<table border="0" width="100%" id="personTable" size="2" cellspacing="0" >
+			<tr>
+				<td  style="padding-left:10px" width="15%"><font size ="5" color="white"> 编号</font></td>
+				<td  width="15%" align="center"><font size ="5" color="white">姓名</font></td>
+				<td  align="right" style="padding-right:10px"  width="15%"><font size ="5" color="white">电话</font></td>
+			</tr>
+
+	</table>
+	<br></br>
+	<p id="content" bgcolor="0000ff" text="#ffffff"></p> 
+	<input type="button" value="JS调用Android显示土司" style="padding:10px" align="center" onclick="androidShowToast1(this)" />
+	<button id="btn" onclick="androidShowToast2('hello，这是JS调用Android显示的土司')">JS调用Android显示土司</button>
+	<br></br>
+	<p bgcolor="00ff00" text="#ffffff">Alter对话框----</p> 
+	<input type="button" style="padding:20px" name="button" value="按钮1" align="center" onclick="alterFun()" />
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.example.ddddd"
+    android:id="@android:id/message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#880000ff"
+        android:gravity="center"
+        android:text="各种自定义样式viewpager"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/triangle_viewpager_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="三角指示器样式viewpager"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/color_viewpager_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:text="切换颜色渐变式viewpager"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

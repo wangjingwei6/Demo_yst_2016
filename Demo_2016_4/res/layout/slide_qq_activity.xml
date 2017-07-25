@@ -1,0 +1,58 @@
+<com.wjw.sildeswipeactivity.QQSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slide_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_nature3" >
+
+    <LinearLayout
+        android:id="@+id/fl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是左面板111111111"
+            android:textColor="#ffffff"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="这是左面板222222222"
+            android:textColor="#ffffff"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="这是左面板3333333333"
+            android:textColor="#ffffff"
+            android:textSize="18sp" >
+        </TextView>
+    </LinearLayout>
+
+    <com.wjw.sildeswipeactivity.MainContentLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dog11" />
+    </com.wjw.sildeswipeactivity.MainContentLayout>
+
+</com.wjw.sildeswipeactivity.QQSlideLayout>

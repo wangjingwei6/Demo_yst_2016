@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleMenu">
+        <attr name="fab_radius" format="dimension" />
+        <attr name="menu_radius" format="dimension" />
+        <attr name="distance_between_menu_fab" format="dimension" />
+        <attr name="two_text_size" format="dimension" />
+        <attr name="three_text_size" format="dimension" />
+        <attr name="menu_texts" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ShapeLayout">
+        <attr name="shape_src" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TopInnerArrowLayout">
+        <attr name="arrowSize" format="dimension" />
+        <attr name="arrowPosition" format="float" />
+    </declare-styleable>
+    <declare-styleable name="MoreTextStyle">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="maxLine" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <!-- viewpager -->
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+    <!-- 自定义上下滚动textview -->
+    <declare-styleable name="auto3d">
+        <attr name="textSize_auto" format="dimension" />
+    </declare-styleable>
+
+    <!-- 双向的 SwipyRefreshLayout -->
+    <declare-styleable name="SwipyRefreshLayout">
+        <attr name="direction">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 照相机获取焦点 -->
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+
+    <!-- 圆形 imageView -->
+    <declare-styleable name="CircularImageView">
+
+        <!-- Specifies whether or not to draw a circular border around the image. -->
+        <attr name="border" format="boolean"></attr>
+        <!-- Specifies the color of the border draw around the image. (if enabled) -->
+        <attr name="border_color" format="color"></attr>
+        <!-- Makes the border this pixels wide. (if enabled) -->
+        <attr name="border_width" format="dimension"></attr>
+        <!-- Specifies whether or not to draw a selector on this view upon touch events. -->
+        <attr name="selector" format="boolean"></attr>
+        <!-- Specifies the color of the selector draw on top of the image upon touch events. (if enabled) -->
+        <attr name="selector_color" format="color"></attr>
+        <!-- Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) -->
+        <attr name="selector_stroke_color" format="color"></attr>
+        <!-- Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) -->
+        <attr name="selector_stroke_width" format="dimension"></attr>
+        <!-- Specifies whether or not to draw a shadow around your circular image. -->
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="rainbowbar">
+        <attr name="rainbowbar_hspace" format="dimension"></attr>
+        <attr name="rainbowbar_vspace" format="dimension"></attr>
+        <attr name="rainbowbar_color" format="color"></attr>
+    </declare-styleable>
+
+    <!-- 自定义textview属性 -->
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="titleTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- 自定义三角viewpager -->
+    <declare-styleable name="MyViewPagerIndicator">
+        <attr name="visible_tab_count" format="integer" />
+    </declare-styleable>
+    
+    
+    <!--自定义滑动页面title渐变色 -->
+    <declare-styleable name="ColorTrackView">
+        <attr name="trackview_text" format="string" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_origin_color" format="color|reference" />
+        <attr name="text_change_color" format="color|reference" />
+        <attr name="progress" format="float" />
+        <attr name="direction_track_view_viewpager">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+    
+    
+	<!--自定义手势滑动锁属性  -->
+    <declare-styleable name="GestureLockViewGroup">
+        <attr name="color_no_finger_inner_circle" format="color"/>
+        <attr name="color_no_finger_outer_circle" format="color" />
+        <attr name="color_finger_on"  format="color"/>
+        <attr name="color_finger_up" format="color"/>
+        <attr name="count" format="integer"/>
+        <attr name="tryTimes" format="integer"/>
+    </declare-styleable>
+
+</resources>

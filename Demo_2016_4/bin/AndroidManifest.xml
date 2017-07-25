@@ -1,0 +1,163 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ddddd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.wjw.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wjw.activity.MainActivity"
+            android:label="@string/actionbar_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/customtitlebarTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wjw.activity.SecondActivity" >
+            <intent-filter>
+                <action android:name="SECONDACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.wjw.lockview.LockViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.customviewpager.BaseCustomViewpagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.customviewpager.TriangleViewpagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.customviewpager.ColorViewPagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.sildeswipeactivity.BaseSlideStyleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.sildeswipeactivity.SlideSwipeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActTheme" >
+        </activity>
+        <activity
+            android:name="com.wjw.sildeswipeactivity.QQSlideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.prefect.swiperefreshlayout.SwipeRefreshListViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.GooleListViewStyleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customtitlebarTheme" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.GooleGridViewStyleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customtitlebarTheme" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.GoogleExpandableListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/customtitlebarTheme" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.TestCustomLoadingHorizontalActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.ProviderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.SwipeMenuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.textviewhightdemo.ExtendTextViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.WebViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.TestWebViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.AAALoopViewPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.BBBLoopViewPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.ScrollVerticalTextViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.RecycleViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.customtest.camera.CustomCameraActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.CustomDialogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.CustomHorizontalScrollviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.CustomVideoViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.wjw.activity.CustomCanvasActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+
+        <service
+            android:name="com.wjw.activity.MyService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.wjw.service" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

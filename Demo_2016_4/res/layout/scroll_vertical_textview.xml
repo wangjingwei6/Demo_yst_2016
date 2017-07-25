@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/textview_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义Textview实现滚动" />
+
+        <Button
+            android:id="@+id/recycleview_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义recycle实现滚动" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="自定义TextView实现"
+            android:textColor="#0000ff" />
+
+        <com.wjw.customview.AutoTextView
+            android:id="@+id/scrolltextview_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/linearlayout_shape"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="自定义RecycleView实现"
+            android:textColor="#0000ff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/linearlayout_shape"
+            android:layout_marginRight="8dp" >
+
+            <com.wjw.customview.MarqueeView
+                android:id="@+id/recycle_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp" >
+            </com.wjw.customview.MarqueeView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:text="Button_相册" />
+    
+    <Button
+        android:id="@+id/button_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:text="Button_音乐" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/message"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/sign_toast_shape"
+    android:gravity="center"
+    android:paddingLeft="56dp"
+    android:paddingRight="56dp"
+    android:paddingTop="28dp"
+    android:paddingBottom="28dp"
+    android:text="点击了 第五行"
+    android:textColor="#ffffffff"
+    android:textSize="20.0sp" 
+         />
+

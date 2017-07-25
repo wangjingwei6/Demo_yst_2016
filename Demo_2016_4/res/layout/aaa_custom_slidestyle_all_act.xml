@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#880000ff"
+        android:gravity="center"
+        android:text="各种侧面滑动Style"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/slide_cehua_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="仿QQ侧滑"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/slide_huadong_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:text="滑动切换页面"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

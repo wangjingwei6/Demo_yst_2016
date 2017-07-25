@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wjw="http://schemas.android.com/apk/res/com.example.ddddd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+        
+        <com.wjw.customviewpager.ColorTrackView
+            android:id="@+id/id_tab_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wjw:progress="1"
+            wjw:text_change_color="#ffff0000"
+            wjw:text_origin_color="#ff000000"
+            wjw:text_size="18sp"
+            wjw:trackview_text="个人" />
+        
+
+        <com.wjw.customviewpager.ColorTrackView
+            android:id="@+id/id_tab_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wjw:text_change_color="#ffff0000"
+            wjw:text_origin_color="#ff000000"
+            wjw:text_size="18sp"
+            wjw:trackview_text="简介" />
+
+        <com.wjw.customviewpager.ColorTrackView
+            android:id="@+id/id_tab_03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wjw:text_change_color="#ffff0000"
+            wjw:text_origin_color="#ff000000"
+            wjw:text_size="18sp"
+            wjw:trackview_text="评价" />
+
+        <com.wjw.customviewpager.ColorTrackView
+            android:id="@+id/id_tab_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            wjw:text_change_color="#ffff0000"
+            wjw:text_origin_color="#ff000000"
+            wjw:text_size="18sp"
+            wjw:trackview_text="相关" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

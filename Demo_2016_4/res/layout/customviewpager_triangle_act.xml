@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wjw="http://schemas.android.com/apk/res/com.example.ddddd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <com.wjw.customviewpager.CustomViewpagerIndicator
+        android:id="@+id/id_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#2c2e36"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        wjw:visible_tab_count="4" >
+    </com.wjw.customviewpager.CustomViewpagerIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

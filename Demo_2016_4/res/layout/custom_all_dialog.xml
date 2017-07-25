@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/progress_vertical_xuanzhuang_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:text="旋转进度条"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/progress_honrizontal_dialog__bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:text="显示更新的横向进度条"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/progress_honrizontal_color_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:text="自定义颜色横向进度条"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/progress_honrizontal_micai_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/confirm_back_selector"
+        android:padding="8dp"
+        android:text="自定义迷彩横向进度条"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progress_horizontal_color"
+            style="@style/progressBarHorizontal_color"
+            android:layout_width="200dip"
+            android:layout_height="10dip"
+            android:indeterminate="true"
+            android:max="100"
+            android:progress="41"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progress_horizontal_micai"
+            style="@style/progressBarHorizontal_icon"
+            android:layout_width="200dip"
+            android:layout_height="10dip"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="41"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

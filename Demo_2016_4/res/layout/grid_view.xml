@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="64dp" 
+    android:paddingBottom="64dp"
+    android:background="#ffffffff"
+    android:singleLine="true"
+    android:text="内蒙古"
+    android:textColor="@drawable/gridview_textcolor_selector" >
+</TextView>
+<!--     android:background="@drawable/gridview_selector" -->
